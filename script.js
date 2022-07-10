@@ -1,5 +1,6 @@
 let btn = document.querySelector(".submit");
 let input = document.getElementById("location");
+let container = document.querySelector(".container");
 
 async function dataFetch() {
   let search = input.value;
@@ -45,14 +46,17 @@ async function display() {
 
   if (id <= 531 && id >= 200) {
     console.log("rain background");
+    container.style.backgroundImage = "url(rain.png)";
   }
 
-  if (id <= 622 && id > 600) {
+  if (id <= 622 && id >= 600) {
     console.log("snow background");
+    container.style.backgroundImage = "url(snow.png)";
   }
 
   if (id <= 804 && id >= 800) {
     console.log("regular background");
+    container.style.backgroundImage = "url(default.png)";
   }
 }
 
