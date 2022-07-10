@@ -7,7 +7,9 @@ async function dataFetch() {
   let search = input.value;
   console.log(search);
   let data = await fetch(
-    "https://api.openweathermap.org/data/2.5/weather?q=Toronto&APPID=77b6c4aebc71d028b7bba3ec0ead299f&units=metric",
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
+      search +
+      "&APPID=77b6c4aebc71d028b7bba3ec0ead299f&units=metric",
     { mode: "cors" }
   );
   console.log(data);
