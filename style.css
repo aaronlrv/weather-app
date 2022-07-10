@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 
 body,
@@ -43,8 +43,10 @@ main {
 
 .location {
   display: flex;
-  font-size: 40px;
+  font-size: 75px;
   font-weight: bold;
+  text-indent: -7px;
+  letter-spacing: 15px;
 }
 
 .weather {
