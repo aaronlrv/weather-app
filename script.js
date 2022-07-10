@@ -10,9 +10,7 @@ async function dataFetch() {
       "&APPID=77b6c4aebc71d028b7bba3ec0ead299f&units=metric",
     { mode: "cors" }
   );
-  console.log(data);
   let jsonData = await data.json();
-  console.log(jsonData);
 
   return jsonData;
 }
@@ -40,14 +38,6 @@ async function display() {
     "Humidity:" + " " + humidity;
   document.querySelector(".windspeed").textContent =
     "Wind Speed:" + " " + windSpeed;
-
-  console.log(locationName);
-  console.log(weatherTemp);
-  console.log(weatherDesc);
-  console.log(countryCode);
-  console.log(feelsLike);
-  console.log(humidity);
-  console.log(windSpeed);
 }
 
 input.addEventListener("keydown", (e) => {
