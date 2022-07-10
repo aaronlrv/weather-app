@@ -1,6 +1,5 @@
 let btn = document.querySelector(".submit");
 let input = document.getElementById("location");
-let data;
 
 btn.addEventListener("click", display);
 
@@ -31,6 +30,14 @@ async function display() {
   let feelsLike = await data.main.feels_like;
   let humidity = await data.main.humidity;
   let windSpeed = await data.wind.speed;
+
+  document.querySelector(".locationName").textContent = locationName;
+  document.querySelector(".countryCode").textContent = countryCode;
+  document.querySelector(".temperature").textContent = weatherTemp;
+  document.querySelector(".description").textContent = weatherDesc;
+  document.querySelector(".feelsLike").textContent = feelsLike;
+  document.querySelector(".humidity").textContent = humidity;
+  document.querySelector(".windspeed").textContent = windSpeed;
 
   console.log(locationName);
   console.log(weatherTemp);
