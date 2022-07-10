@@ -19,23 +19,26 @@
       <header></header>
       <main>
         <div class="information">
-          <div class="location">
-            <p class="locationName"></p>
-            <p class="countryCode"></p>
+          <div class="information-wrap">
+            <div class="location">
+              <p class="locationName"></p>
+              <p class="countryCode"></p>
+            </div>
+
+            <div class="weather">
+              <p class="temperature"></p>
+              <p class="description"></p>
+              <p class="feelsLike"></p>
+              <p class="humidity"></p>
+              <p class="windspeed"></p>
+            </div>
           </div>
 
-          <div class="weather">
-            <p class="temperature"></p>
-            <p class="description"></p>
-            <p class="feelsLike"></p>
-            <p class="humidity"></p>
-            <p class="windspeed"></p>
+          <div class="search">
+            <label for="location"></label>
+            <input type="text" name="location" id="location" />
+            <button class="submit">Submit</button>
           </div>
-        </div>
-        <div class="search">
-          <label for="location"></label>
-          <input type="text" name="location" id="location" />
-          <button class="submit">Submit</button>
         </div>
       </main>
       <footer></footer>
