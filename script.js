@@ -1,3 +1,10 @@
+let btn = document.querySelector(".submit");
+let input = document.getElementById("location");
+
+btn.addEventListener("click", () => {
+  let search = input.value;
+  console.log(search);
+});
 async function dataFetch() {
   let data = await fetch(
     "https://api.openweathermap.org/data/2.5/weather?q=Toronto&APPID=77b6c4aebc71d028b7bba3ec0ead299f&units=metric",
