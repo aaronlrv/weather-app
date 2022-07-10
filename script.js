@@ -33,11 +33,27 @@ async function display() {
   document.querySelector(".temperature").textContent = weatherTemp + "°C";
   document.querySelector(".description").textContent = weatherDesc;
   document.querySelector(".feelsLike").textContent =
-    "Feels Like:" + " " + feelsLike;
+    "Feels Like:" + " " + feelsLike + "°C";
   document.querySelector(".humidity").textContent =
     "Humidity:" + " " + humidity;
   document.querySelector(".windspeed").textContent =
     "Wind Speed:" + " " + windSpeed;
+
+  let id = data.weather[0].id;
+
+  console.log(data.weather[0].id);
+
+  if (id <= 531 && id >= 200) {
+    console.log("rain background");
+  }
+
+  if (id <= 622 && id > 600) {
+    console.log("snow background");
+  }
+
+  if (id <= 804 && id >= 800) {
+    console.log("regular background");
+  }
 }
 
 input.addEventListener("keydown", (e) => {
