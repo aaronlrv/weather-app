@@ -20,13 +20,13 @@ async function display() {
   let data = await dataFetch();
   console.log(data);
 
-  let locationName = await data.name;
-  let weatherTemp = await data.main.temp;
-  let weatherDesc = await data.weather[0].main;
-  let countryCode = await data.sys.country;
-  let feelsLike = await data.main.feels_like;
-  let humidity = await data.main.humidity;
-  let windSpeed = await data.wind.speed;
+  let locationName = data.name;
+  let weatherTemp = data.main.temp;
+  let weatherDesc = data.weather[0].main;
+  let countryCode = data.sys.country;
+  let feelsLike = data.main.feels_like;
+  let humidity = data.main.humidity;
+  let windSpeed = data.wind.speed;
 
   document.querySelector(".locationName").textContent =
     locationName + "," + "  ";
