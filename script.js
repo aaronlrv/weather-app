@@ -31,13 +31,17 @@ async function display() {
   let humidity = await data.main.humidity;
   let windSpeed = await data.wind.speed;
 
-  document.querySelector(".locationName").textContent = locationName;
-  document.querySelector(".countryCode").textContent = countryCode;
-  document.querySelector(".temperature").textContent = weatherTemp;
+  document.querySelector(".locationName").textContent =
+    locationName + "," + "  ";
+  document.querySelector(".countryCode").textContent = " " + countryCode;
+  document.querySelector(".temperature").textContent = weatherTemp + "°C";
   document.querySelector(".description").textContent = weatherDesc;
-  document.querySelector(".feelsLike").textContent = feelsLike;
-  document.querySelector(".humidity").textContent = humidity;
-  document.querySelector(".windspeed").textContent = windSpeed;
+  document.querySelector(".feelsLike").textContent =
+    "Feels Like:" + " " + feelsLike;
+  document.querySelector(".humidity").textContent =
+    "Humidity:" + " " + humidity;
+  document.querySelector(".windspeed").textContent =
+    "Wind Speed:" + " " + windSpeed;
 
   console.log(locationName);
   console.log(weatherTemp);

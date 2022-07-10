@@ -14,6 +14,7 @@ html {
 .container {
   height: 100%;
   background-image: url(default.png);
+  color: white;
 }
 
 main {
@@ -38,4 +39,10 @@ main {
   justify-content: center;
   align-items: flex-start;
   padding-left: 90px;
+}
+
+.location {
+  display: flex;
+  font-size: 60px;
+  font-weight: bold;
 }
