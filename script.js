@@ -1,8 +1,6 @@
 let btn = document.querySelector(".submit");
 let input = document.getElementById("location");
 
-btn.addEventListener("click", display);
-
 async function dataFetch() {
   let search = input.value;
   console.log(search);
@@ -51,3 +49,9 @@ async function display() {
   console.log(humidity);
   console.log(windSpeed);
 }
+
+input.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    display();
+  }
+});
