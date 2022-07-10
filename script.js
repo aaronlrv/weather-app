@@ -25,7 +25,7 @@ async function display() {
 
   let locationName = await data.name;
   let weatherTemp = await data.main.temp;
-  let weatherDesc = await data.weather[0].description;
+  let weatherDesc = await data.weather[0].main;
   let countryCode = await data.sys.country;
   let feelsLike = await data.main.feels_like;
   let humidity = await data.main.humidity;
