@@ -16,7 +16,7 @@ This was my first time implementing Asynchronous programming, Particularly using
 
 ## How to use
 
-Use the Github pages environment and view the latest deployment of the project 
+Use the Github pages environment and view the latest deployment of the project or use this live repo link aaronlrv.github.io/weather-app/
 
 ## Tech/ Framework Used
 <p align="left"> 
